@@ -3,6 +3,7 @@ package org.sochidrive.weathersd.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.sochidrive.weathersd.R
+import org.sochidrive.weathersd.view.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.container,MainFragment.newInstance())
+                .replace(R.id.container, MainFragment.newInstance())
                 .commit()
         }
     }
